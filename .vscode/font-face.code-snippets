@@ -1,0 +1,18 @@
+{
+	"Print to console": {
+		"scope": "css,scss",
+		"prefix": "fontface",
+		"body": [
+			"@font-face {",
+			"\tfont-family: '${1:$CLIPBOARD}';",
+			"\tfont-weight: ${2:400};",
+			"\tfont-style: ${3:normal};",
+			"\tfont-display: ${4:swap};",
+			"\tsrc: url(${5:../../fonts}/${6:$CLIPBOARD}.woff2) format('woff2'),",
+			"\t\turl(${5:../../fonts}/${6:$CLIPBOARD}.woff) format('woff'),",
+			"\t\turl(${5:../../fonts}/${6:$CLIPBOARD}.ttf) format('truetype');",
+			"}",
+		],
+		"description": "local font-face clipboard"
+	}
+}

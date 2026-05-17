@@ -1,0 +1,13 @@
+{
+	"Print to console": {
+		"scope": "css,scss",
+		"prefix": "bgimage",
+		"body": [
+			"background-image: url(${1});",
+			"background-position: ${2:center};",
+			"background-repeat: ${3:no-repeat};",
+			"background-size: ${4:contain};",
+		],
+		"description": "local background-image"
+	}
+}
