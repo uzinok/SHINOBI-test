@@ -84,6 +84,7 @@
 			<div class="timer__container container">
 				<!-- timer__block -->
 				<div class="timer__block">
+					<h2 class="timer__title">Оставьте заявку и зафиксируйте условия</h2>
 					<!-- Sinoby Timer -->
 					<!--
 Пояснения к параметрам:
@@ -112,18 +113,18 @@
   style.digitSize — размер чисел (78)
   style.labelSize — размер подписей (18)
   style.labelGap — отступ между цифрами и подписями (0)
-  style.digitGap — отступ между блоками (33)
+  style.digitGap — отступ между блоками (19)
   style.digitColor — цвет чисел ("#000000")
   style.labelColor — цвет подписей ("#b9b9b9")
   style.separatorText — символ разделителя (":")
-  style.separatorSize — размер разделителя (27)
+  style.separatorSize — размер разделителя (40)
   style.separatorColor — цвет разделителя ("#000000")
   style.ringCurrentColor — цвет текущей части кольца ("#00cabf")
   style.ringCurrentColorEnd — второй цвет градиента линии круга ("#00cabf")
   style.ringRemainingColor — цвет оставшейся части кольца ("#d6d6d6")
   style.ringRemainingColorEnd — второй цвет градиента остатка круга ("#d6d6d6")
-  style.ringThickness — толщина линии круга (6)
-  style.ringRadius — радиус круга (19)
+  style.ringThickness — толщина линии круга (8)
+  style.ringRadius — радиус круга (20)
   style.ringDirection — направление круга ("cw")
   style.ringLineMode — режим цвета линии круга ("solid")
   style.ringRemainingMode — режим цвета остатка круга ("solid")
@@ -134,25 +135,24 @@
   style.flipEffect — эффект смены цифр шаблона Флип ("flip")
   style.flipShadow — тень цифрового блока шаблона Флип (true)
   schedule.endAt — дата/время завершения (null)
-  schedule.durationSeconds — длительность в секундах (781260)
+  schedule.durationSeconds — длительность в секундах (694860)
   schedule.durationStartMode — режим старта ("first-visit")
   schedule.cyclePreset — режим цикла ("daily")
 -->
 					<style>
 						/* Фиксирует высоту таймера до загрузки */
-						.sinoby-timer[data-sinoby-reserve="sinoby-b5jks4"] {
+						.sinoby-timer[data-sinoby-reserve="sinoby-cql36w"] {
 							display: block;
 							min-height: 112px;
 						}
 
 						@media (max-width:767px) {
-							.sinoby-timer[data-sinoby-reserve="sinoby-b5jks4"] {
+							.sinoby-timer[data-sinoby-reserve="sinoby-cql36w"] {
 								min-height: 81px;
 							}
 						}
-
 					</style>
-					<div class="sinoby-timer" data-sinoby-reserve="sinoby-b5jks4" data-config='{
+					<div class="sinoby-timer" data-sinoby-reserve="sinoby-cql36w" data-config='{
   "type": "duration",
   "theme": "light",
   "preset": "rings-soft",
@@ -183,22 +183,22 @@
     "digitSize": 78,
     "labelSize": 18,
     "labelGap": 0,
-    "digitGap": 33,
+    "digitGap": 19,
     "digitColor": "#000000",
     "labelColor": "#b9b9b9",
     "separatorText": ":",
-    "separatorSize": 27,
+    "separatorSize": 40,
     "separatorColor": "#000000",
     "ringCurrentColor": "#00cabf",
     "ringCurrentColorEnd": "#00cabf",
     "ringRemainingColor": "#d6d6d6",
     "ringRemainingColorEnd": "#d6d6d6",
-    "ringThickness": 6,
-    "ringRadius": 19,
+    "ringThickness": 8,
+    "ringRadius": 20,
     "ringDirection": "cw",
     "ringLineMode": "solid",
     "ringRemainingMode": "solid",
-    "cardBackgroundColor": "#f8fafc",
+    "cardBackgroundColor": "#f3f3f3",
     "flipBackgroundColor": "#0f172a",
     "flipBgMode": "solid",
     "flipBackgroundColorEnd": "#0f172a",
@@ -207,12 +207,17 @@
   },
   "schedule": {
     "endAt": null,
-    "durationSeconds": 781260,
+    "durationSeconds": 694860,
     "durationStartMode": "first-visit",
     "cyclePreset": "daily"
   }
 }' data-lazy="true"></div>
 					<script src="//timer.sinoby.ru/public/assets/embed/timer-core.min.js?v=20260514a"></script>
+					<script>
+						window.addEventListener('load', () => {
+							console.log(SinobyTimer);
+						})
+					</script>
 					<!-- /Sinoby Timer -->
 				</div>
 				<!-- \timer__block -->
