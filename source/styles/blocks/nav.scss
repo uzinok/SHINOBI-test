@@ -1,0 +1,30 @@
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 10px;
+	padding-bottom: 9px;
+	gap: 20px;
+}
+
+.nav__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	gap: 14px;
+
+	&--first {
+		margin-right: auto;
+	}
+
+	&--last {
+		text-transform: uppercase;
+	}
+}
+
+.nav__link {
+	font-weight: 500;
+	font-size: 10.66px;
+	text-decoration: none;
+}

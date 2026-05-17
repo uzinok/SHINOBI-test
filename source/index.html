@@ -9,16 +9,59 @@
 </head>
 <body>
 
-	<img src="./images/icons/sprite/device.svg" alt="">
-	<img src="./images/icons/sprite/map-pin.svg" alt="">
-	<img src="./images/logo.svg" alt="">
-
-	<div style="text-align: center;">
-		<p>
-			{% raw %}{% include './images/sprite.svg' %}{% endraw %}
-		</p>
+	<div style="display: none;">
+		{% include './images/sprite.svg' %}
 	</div>
 
+	<!-- header -->
+	<header class="header">
+		<h1 class="visually-hidden">Официальный дилер HAVAL</h1>
+		<!-- top -->
+		<div class="header__container container">
+			<a href="#" class="header__logo">
+				Официальный дилер
+				<img src="./images/logo.svg" alt="Логотип HAVAL" width="158" height="20">
+			</a>
+
+			<a href="tel:+0 000 000 00 00" class="header__link">
+				<svg width="21" height="24" class="header__link-icon">
+					<use href="#device"></use>
+				</svg>
+				+0 000 000 00 00
+			</a>
+
+			<span class="header__address">
+				<svg width="17" height="28" class="header__address-icon">
+					<use href="#map-pin"></use>
+				</svg>
+				<span class="header__address-sity">г. Москва</span>
+				<span class="header__address-schedule">Часы работы с 09:00 до 21:00</span>
+			</span>
+		</div>
+		<!-- \top -->
+		<!-- bottom -->
+		<nav class="container header__nav nav">
+			<ul class="nav__list nav__list--first">
+				<li><a href="#" class="nav__link">M6</a></li>
+				<li><a href="#" class="nav__link">DARGO X</a></li>
+				<li><a href="#" class="nav__link">DARGO</a></li>
+				<li><a href="#" class="nav__link">JOLION</a></li>
+				<li><a href="#" class="nav__link">F7x</a></li>
+				<li><a href="#" class="nav__link">F7</a></li>
+				<li><a href="#" class="nav__link">H9</a></li>
+				<li><a href="#" class="nav__link">GWM Poer</a></li>
+				<li><a href="#" class="nav__link">GWM Poer KINGKONG</a></li>
+			</ul>
+
+			<ul class="nav__list nav__list--last">
+				<li><a href="#" class="nav__link">Подобрать комплектацию</a></li>
+				<li><a href="#" class="nav__link">Тест-драйв</a></li>
+				<li><a href="#" class="nav__link">Контакты</a></li>
+			</ul>
+		</nav>
+		<!-- \bottom -->
+	</header>
+	<!-- \header -->
 	<script src="./scripts/main.js"></script>
 </body>
 </html>

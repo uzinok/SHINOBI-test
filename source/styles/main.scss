@@ -1,4 +1,7 @@
 // @use './layout/grid.scss'; // для сетки
 
 @use './layout/variable.scss';
+@use './layout/fonts.scss';
 @use './layout/scaffolding.scss';
+@use './blocks/header.scss';
+@use './blocks/nav.scss';

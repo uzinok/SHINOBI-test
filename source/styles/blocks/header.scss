@@ -1,0 +1,94 @@
+.header {
+	background-color: #000000;
+	color: #ffffff;
+
+	& a {
+		color: inherit;
+	}
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 18px;
+	position: relative;
+	gap: 15px;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100vw;
+		height: 1px;
+		background-color: rgba(255, 255, 255, 20%);
+		bottom: 0;
+		left: -100%;
+		box-shadow: 100vw 0 0 rgba(255, 255, 255, 20%);
+	}
+}
+
+.header__logo {
+	display: grid;
+	text-decoration: none;
+	font-size: 11px;
+	gap: 8px;
+
+	@media (min-width: 990px) {
+		margin-right: 142px;
+	}
+
+	& img {
+		width: 158px;
+		height: 20px;
+	}
+}
+
+.header__link {
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 15px;
+	margin-left: auto;
+
+	@media (max-width: 500px) {
+				display: none;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.header__link-icon {
+	stroke: #ffffff;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.header__address {
+	display: none;
+
+	@media (min-width: 990px) {
+		display: block;
+		text-decoration: none;
+		margin-left: auto;
+
+		& span {
+			display: block;
+			margin-left: 28px;
+		}
+	}
+}
+
+.header__address-sity {
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+
+.header__address-schedule {
+	font-size: 12px;
+}
+
+.header__address-icon {
+	float: left;
+}
