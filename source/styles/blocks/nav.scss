@@ -27,4 +27,8 @@
 	font-weight: 500;
 	font-size: 10.66px;
 	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
