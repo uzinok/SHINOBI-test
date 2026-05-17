@@ -1,0 +1,13 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.43478" height="24.02174" viewBox="0 0 17.43478 24.02174">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <image width="18" height="25" transform="translate(-0.27174 -0.97826)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAZCAYAAAA8CX6UAAAACXBIWXMAAAsSAAALEgHS3X78AAAAPklEQVQ4T+3VIQ4AMQwDwfWp//+yiw62Lgj0oIBoFRYBZsCXFl6tf7Ct2+KJJMPgRQ1lDWUNZQ1lDWVi6K9t/EwGMePq5xgAAAAASUVORK5CYII="/>
+  <line class="cls-1" x1="5.30978" y1="19.96809" x2="12.125" y2="20.0007"/>
+</svg>
