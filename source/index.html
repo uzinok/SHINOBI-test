@@ -1,489 +1,493 @@
-<!DOCTYPE html>
-<html lang="en">
+	<!DOCTYPE html>
+	<html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<title>Document</title>
-	<link rel="stylesheet" href="./vendor/swiper/swiper-bundle.min.css">
-	<link rel="stylesheet" href="./styles/main.css">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<title>Document</title>
+		<link rel="stylesheet" href="./vendor/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="./styles/main.css">
+	</head>
 
-<body>
+	<body>
 
-	<div style="display: none;">
-		{% include './images/sprite.svg' %}
-	</div>
-
-	<!-- header -->
-	<header class="header">
-		<h1 class="visually-hidden">Официальный дилер HAVAL</h1>
-		<!-- top -->
-		<div class="header__container container">
-			<a href="#" class="header__logo">
-				Официальный дилер
-				<img src="./images/logo.svg" alt="Логотип HAVAL" width="158" height="20">
-			</a>
-
-			<a href="tel:+0 000 000 00 00" class="header__link">
-				<svg width="21" height="24" class="header__link-icon">
-					<use href="#device"></use>
-				</svg>
-				+0 000 000 00 00
-			</a>
-
-			<span class="header__address">
-				<svg width="17" height="28" class="header__address-icon">
-					<use href="#map-pin"></use>
-				</svg>
-				<span class="header__address-sity">г. Москва</span>
-				<span class="header__address-schedule">Часы работы с 09:00 до 21:00</span>
-			</span>
+		<div style="display: none;">
+			{% include './images/sprite.svg' %}
 		</div>
-		<!-- \top -->
-		<!-- bottom -->
-		<nav class="container header__nav nav">
-			<ul class="nav__list nav__list--first">
-				<li><a href="#" class="nav__link">M6</a></li>
-				<li><a href="#" class="nav__link">DARGO X</a></li>
-				<li><a href="#" class="nav__link">DARGO</a></li>
-				<li><a href="#" class="nav__link">JOLION</a></li>
-				<li><a href="#" class="nav__link">F7x</a></li>
-				<li><a href="#" class="nav__link">F7</a></li>
-				<li><a href="#" class="nav__link">H9</a></li>
-				<li><a href="#" class="nav__link">GWM Poer</a></li>
-				<li><a href="#" class="nav__link">GWM Poer KINGKONG</a></li>
-			</ul>
 
-			<ul class="nav__list nav__list--last">
-				<li><a href="#" class="nav__link">Подобрать комплектацию</a></li>
-				<li><a href="#" class="nav__link">Тест-драйв</a></li>
-				<li><a href="#" class="nav__link">Контакты</a></li>
-			</ul>
-		</nav>
-		<!-- \bottom -->
-	</header>
-	<!-- \header -->
+		<!-- header -->
+		<header class="header">
+			<h1 class="visually-hidden">Официальный дилер HAVAL</h1>
+			<!-- top -->
+			<div class="header__container container">
+				<a href="#" class="header__logo">
+					Официальный дилер
+					<img src="./images/logo.svg" alt="Логотип HAVAL" width="158" height="20">
+				</a>
 
-	<!-- main -->
-	<main>
-		<!-- hero -->
-		<section class="hero">
-			<div class="hero__container container">
-				<h2 class="hero__title">
-					Увеличиваем выгоды на&nbsp;HAVAL
-					<span class="color-primary">в&nbsp;Химках к&nbsp;Чёрной пятнице!</span>
-				</h2>
+				<a href="tel:+0 000 000 00 00" class="header__link">
+					<svg width="21" height="24" class="header__link-icon">
+						<use href="#device"></use>
+					</svg>
+					+0 000 000 00 00
+				</a>
 
-				<a href="#" class="hero__button button">Зафиксировать условия</a>
+				<span class="header__address">
+					<svg width="17" height="28" class="header__address-icon">
+						<use href="#map-pin"></use>
+					</svg>
+					<span class="header__address-sity">г. Москва</span>
+					<span class="header__address-schedule">Часы работы с 09:00 до 21:00</span>
+				</span>
 			</div>
-		</section>
-		<!-- \hero -->
-		<!-- timer -->
-		<article class="timer">
-			<div class="timer__container container">
-				<!-- timer__block -->
-				<div class="timer__block">
-					<h2 class="timer__title">Оставьте заявку и зафиксируйте условия</h2>
-					<!-- Sinoby Timer -->
-					<!--
-Пояснения к параметрам:
-  type — тип таймера ("duration")
-  theme — тема таймера ("light")
-  preset — шаблон ("rings-soft")
-  lazy — параметр (false)
-  timezoneMode — режим временной зоны ("visitor")
-  timezone — временная зона ("Europe/Moscow")
-  alignment — горизонтальное выравнивание ("center")
-  scale — масштаб (1)
-  maxWidth — максимальная ширина (980)
-  hideOnComplete — скрыть таймер после завершения (false)
-  visibility.days — показывать дни (true)
-  visibility.hours — показывать часы (true)
-  visibility.minutes — показывать минуты (true)
-  visibility.seconds — показывать секунды (true)
-  visibility.labels — показывать подписи (true)
-  visibility.separator — показывать разделители (true)
-  labels.days — параметр ("дней")
-  labels.hours — параметр ("часов")
-  labels.minutes — параметр ("минут")
-  labels.seconds — параметр ("секунд")
-  style.digitsFont — шрифт чисел ("Roboto, sans-serif")
-  style.labelsFont — шрифт подписей ("Roboto, sans-serif")
-  style.digitSize — размер чисел (78)
-  style.labelSize — размер подписей (18)
-  style.labelGap — отступ между цифрами и подписями (0)
-  style.digitGap — отступ между блоками (19)
-  style.digitColor — цвет чисел ("#000000")
-  style.labelColor — цвет подписей ("#b9b9b9")
-  style.separatorText — символ разделителя (":")
-  style.separatorSize — размер разделителя (40)
-  style.separatorColor — цвет разделителя ("#000000")
-  style.ringCurrentColor — цвет текущей части кольца ("#00cabf")
-  style.ringCurrentColorEnd — второй цвет градиента линии круга ("#00cabf")
-  style.ringRemainingColor — цвет оставшейся части кольца ("#d6d6d6")
-  style.ringRemainingColorEnd — второй цвет градиента остатка круга ("#d6d6d6")
-  style.ringThickness — толщина линии круга (8)
-  style.ringRadius — радиус круга (20)
-  style.ringDirection — направление круга ("cw")
-  style.ringLineMode — режим цвета линии круга ("solid")
-  style.ringRemainingMode — режим цвета остатка круга ("solid")
-  style.cardBackgroundColor — цвет фона шаблона Табличка ("#f8fafc")
-  style.flipBackgroundColor — цвет фона шаблона Флип ("#0f172a")
-  style.flipBgMode — параметр ("solid")
-  style.flipBackgroundColorEnd — параметр ("#0f172a")
-  style.flipEffect — эффект смены цифр шаблона Флип ("flip")
-  style.flipShadow — тень цифрового блока шаблона Флип (true)
-  schedule.endAt — дата/время завершения (null)
-  schedule.durationSeconds — длительность в секундах (694860)
-  schedule.durationStartMode — режим старта ("first-visit")
-  schedule.cyclePreset — режим цикла ("daily")
--->
-					<style>
-						/* Фиксирует высоту таймера до загрузки */
-						.sinoby-timer[data-sinoby-reserve="sinoby-cql36w"] {
-							display: block;
-							min-height: 112px;
-						}
+			<!-- \top -->
+			<!-- bottom -->
+			<nav class="container header__nav nav">
+				<ul class="nav__list nav__list--first">
+					<li><a href="#" class="nav__link">M6</a></li>
+					<li><a href="#" class="nav__link">DARGO X</a></li>
+					<li><a href="#" class="nav__link">DARGO</a></li>
+					<li><a href="#" class="nav__link">JOLION</a></li>
+					<li><a href="#" class="nav__link">F7x</a></li>
+					<li><a href="#" class="nav__link">F7</a></li>
+					<li><a href="#" class="nav__link">H9</a></li>
+					<li><a href="#" class="nav__link">GWM Poer</a></li>
+					<li><a href="#" class="nav__link">GWM Poer KINGKONG</a></li>
+				</ul>
 
-						@media (max-width:767px) {
+				<ul class="nav__list nav__list--last">
+					<li><a href="#" class="nav__link">Подобрать комплектацию</a></li>
+					<li><a href="#" class="nav__link">Тест-драйв</a></li>
+					<li><a href="#" class="nav__link">Контакты</a></li>
+				</ul>
+			</nav>
+			<!-- \bottom -->
+		</header>
+		<!-- \header -->
+
+		<!-- main -->
+		<main>
+			<!-- hero -->
+			<section class="hero">
+				<div class="hero__container container">
+					<h2 class="hero__title">
+						Увеличиваем выгоды на&nbsp;HAVAL
+						<span class="color-primary">в&nbsp;Химках к&nbsp;Чёрной пятнице!</span>
+					</h2>
+
+					<a href="#" class="hero__button button">Зафиксировать условия</a>
+				</div>
+			</section>
+			<!-- \hero -->
+			<!-- timer -->
+			<article class="timer">
+				<div class="timer__container container">
+					<!-- timer__block -->
+					<div class="timer__block">
+						<h2 class="timer__title">Оставьте заявку и зафиксируйте условия</h2>
+						<!-- Sinoby Timer -->
+						<!--
+	Пояснения к параметрам:
+		type — тип таймера ("duration")
+		theme — тема таймера ("light")
+		preset — шаблон ("rings-soft")
+		lazy — параметр (false)
+		timezoneMode — режим временной зоны ("visitor")
+		timezone — временная зона ("Europe/Moscow")
+		alignment — горизонтальное выравнивание ("center")
+		scale — масштаб (1)
+		maxWidth — максимальная ширина (980)
+		hideOnComplete — скрыть таймер после завершения (false)
+		visibility.days — показывать дни (true)
+		visibility.hours — показывать часы (true)
+		visibility.minutes — показывать минуты (true)
+		visibility.seconds — показывать секунды (true)
+		visibility.labels — показывать подписи (true)
+		visibility.separator — показывать разделители (true)
+		labels.days — параметр ("дней")
+		labels.hours — параметр ("часов")
+		labels.minutes — параметр ("минут")
+		labels.seconds — параметр ("секунд")
+		style.digitsFont — шрифт чисел ("Roboto, sans-serif")
+		style.labelsFont — шрифт подписей ("Roboto, sans-serif")
+		style.digitSize — размер чисел (78)
+		style.labelSize — размер подписей (18)
+		style.labelGap — отступ между цифрами и подписями (0)
+		style.digitGap — отступ между блоками (19)
+		style.digitColor — цвет чисел ("#000000")
+		style.labelColor — цвет подписей ("#b9b9b9")
+		style.separatorText — символ разделителя (":")
+		style.separatorSize — размер разделителя (40)
+		style.separatorColor — цвет разделителя ("#000000")
+		style.ringCurrentColor — цвет текущей части кольца ("#00cabf")
+		style.ringCurrentColorEnd — второй цвет градиента линии круга ("#00cabf")
+		style.ringRemainingColor — цвет оставшейся части кольца ("#d6d6d6")
+		style.ringRemainingColorEnd — второй цвет градиента остатка круга ("#d6d6d6")
+		style.ringThickness — толщина линии круга (8)
+		style.ringRadius — радиус круга (20)
+		style.ringDirection — направление круга ("cw")
+		style.ringLineMode — режим цвета линии круга ("solid")
+		style.ringRemainingMode — режим цвета остатка круга ("solid")
+		style.cardBackgroundColor — цвет фона шаблона Табличка ("#f8fafc")
+		style.flipBackgroundColor — цвет фона шаблона Флип ("#0f172a")
+		style.flipBgMode — параметр ("solid")
+		style.flipBackgroundColorEnd — параметр ("#0f172a")
+		style.flipEffect — эффект смены цифр шаблона Флип ("flip")
+		style.flipShadow — тень цифрового блока шаблона Флип (true)
+		schedule.endAt — дата/время завершения (null)
+		schedule.durationSeconds — длительность в секундах (694860)
+		schedule.durationStartMode — режим старта ("first-visit")
+		schedule.cyclePreset — режим цикла ("daily")
+	-->
+						<style>
+							/* Фиксирует высоту таймера до загрузки */
 							.sinoby-timer[data-sinoby-reserve="sinoby-cql36w"] {
-								min-height: 81px;
+								display: block;
+								min-height: 112px;
 							}
-						}
 
-					</style>
-					<div class="sinoby-timer" data-sinoby-reserve="sinoby-cql36w" data-config='{
-  "type": "duration",
-  "theme": "light",
-  "preset": "rings-soft",
-  "lazy": false,
-  "timezoneMode": "visitor",
-  "timezone": "Europe/Moscow",
-  "alignment": "center",
-  "scale": 1,
-  "maxWidth": 980,
-  "hideOnComplete": false,
-  "visibility": {
-    "days": true,
-    "hours": true,
-    "minutes": true,
-    "seconds": true,
-    "labels": true,
-    "separator": true
-  },
-  "labels": {
-    "days": "дней",
-    "hours": "часов",
-    "minutes": "минут",
-    "seconds": "секунд"
-  },
-  "style": {
-    "digitsFont": "Roboto, sans-serif",
-    "labelsFont": "Roboto, sans-serif",
-    "digitSize": 78,
-    "labelSize": 18,
-    "labelGap": 0,
-    "digitGap": 19,
-    "digitColor": "#000000",
-    "labelColor": "#b9b9b9",
-    "separatorText": ":",
-    "separatorSize": 40,
-    "separatorColor": "#000000",
-    "ringCurrentColor": "#00cabf",
-    "ringCurrentColorEnd": "#00cabf",
-    "ringRemainingColor": "#d6d6d6",
-    "ringRemainingColorEnd": "#d6d6d6",
-    "ringThickness": 8,
-    "ringRadius": 20,
-    "ringDirection": "cw",
-    "ringLineMode": "solid",
-    "ringRemainingMode": "solid",
-    "cardBackgroundColor": "#f3f3f3",
-    "flipBackgroundColor": "#0f172a",
-    "flipBgMode": "solid",
-    "flipBackgroundColorEnd": "#0f172a",
-    "flipEffect": "flip",
-    "flipShadow": true
-  },
-  "schedule": {
-    "endAt": null,
-    "durationSeconds": 694860,
-    "durationStartMode": "first-visit",
-    "cyclePreset": "daily"
-  }
-}' data-lazy="true"></div>
-					<script src="//timer.sinoby.ru/public/assets/embed/timer-core.min.js?v=20260514a"></script>
-					<!-- /Sinoby Timer -->
+							@media (max-width:767px) {
+								.sinoby-timer[data-sinoby-reserve="sinoby-cql36w"] {
+									min-height: 81px;
+								}
+							}
+
+						</style>
+						<div class="sinoby-timer" data-sinoby-reserve="sinoby-cql36w" data-config='{
+		"type": "duration",
+		"theme": "light",
+		"preset": "rings-soft",
+		"lazy": false,
+		"timezoneMode": "visitor",
+		"timezone": "Europe/Moscow",
+		"alignment": "center",
+		"scale": 1,
+		"maxWidth": 980,
+		"hideOnComplete": false,
+		"visibility": {
+			"days": true,
+			"hours": true,
+			"minutes": true,
+			"seconds": true,
+			"labels": true,
+			"separator": true
+		},
+		"labels": {
+			"days": "дней",
+			"hours": "часов",
+			"minutes": "минут",
+			"seconds": "секунд"
+		},
+		"style": {
+			"digitsFont": "Roboto, sans-serif",
+			"labelsFont": "Roboto, sans-serif",
+			"digitSize": 78,
+			"labelSize": 18,
+			"labelGap": 0,
+			"digitGap": 19,
+			"digitColor": "#000000",
+			"labelColor": "#b9b9b9",
+			"separatorText": ":",
+			"separatorSize": 40,
+			"separatorColor": "#000000",
+			"ringCurrentColor": "#00cabf",
+			"ringCurrentColorEnd": "#00cabf",
+			"ringRemainingColor": "#d6d6d6",
+			"ringRemainingColorEnd": "#d6d6d6",
+			"ringThickness": 8,
+			"ringRadius": 20,
+			"ringDirection": "cw",
+			"ringLineMode": "solid",
+			"ringRemainingMode": "solid",
+			"cardBackgroundColor": "#f3f3f3",
+			"flipBackgroundColor": "#0f172a",
+			"flipBgMode": "solid",
+			"flipBackgroundColorEnd": "#0f172a",
+			"flipEffect": "flip",
+			"flipShadow": true
+		},
+		"schedule": {
+			"endAt": null,
+			"durationSeconds": 694860,
+			"durationStartMode": "first-visit",
+			"cyclePreset": "daily"
+		}
+	}' data-lazy="true"></div>
+						<script src="//timer.sinoby.ru/public/assets/embed/timer-core.min.js?v=20260514a"></script>
+						<!-- /Sinoby Timer -->
+					</div>
+					<!-- \timer__block -->
+
+					<a href="#" class="timer__button button">Зафиксировать условия</a>
 				</div>
-				<!-- \timer__block -->
+			</article>
+			<!-- \timer -->
 
-				<a href="#" class="timer__button button">Зафиксировать условия</a>
-			</div>
-		</article>
-		<!-- \timer -->
+			<!-- catalog -->
+			<section class="catalog">
+				<h2 class="visually-hidden">Каталог</h2>
+				<div class="catalog__container container">
+					<!-- m6 -->
+					<!-- slider -->
+					<div class="catalog__slider catalog__slider--m6">
+						<!-- info -->
+						<div class="catalog__info">
+							В наличии
+							<span class="catalog__info-count">21 автомобиль</span>
+						</div>
+						<!-- \info -->
+						<div class="swiper">
+							<ul class="catalog__list swiper-wrapper">
+								<!-- черный-неметаллик / black is non-metallic #000000 -->
+								<li class="catalog__item swiper-slide" data-color='{"text": "черный-неметаллик", "code": "#000000"}'
+									data-count="0" data-model="m6">
+									<div class="catalog-card">
+										<h3 class="catalog-card__name">HAVAL M6</h3>
+										<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
+										<p class="catalog-card__price">
+											Выгода до
+											<span class="catalog-card__price-value">410 000 ₽</span>
+										</p>
+										<img src="./images/photos/m6/black_is_non-metallic.png" alt="HAVAL M6 черный-неметаллик">
+									</div>
+								</li>
+								<!-- серый-неметаллик / gray is non-metallic #a1a1a1 -->
+								<li class="catalog__item swiper-slide" data-color='{"text": "серый-неметаллик", "code": "#a1a1a1"}'
+									data-count="1" data-model="m6">
+									<div class="catalog-card">
+										<h3 class="catalog-card__name">HAVAL M6</h3>
+										<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
+										<p class="catalog-card__price">
+											Выгода до
+											<span class="catalog-card__price-value">410 000 ₽</span>
+										</p>
+										<img src="./images/photos/m6/gray_is_non-metallic.png" alt="HAVAL M6 серый-неметаллик">
+									</div>
+								</li>
+								<!-- белый-неметаллик / white-non-metallic #e7e7e7 -->
+								<li class="catalog__item swiper-slide" data-color='{"text": "белый-неметаллик", "code": "#e7e7e7"}'
+									data-count="21" data-model="m6">
+									<div class="catalog-card">
+										<h3 class="catalog-card__name">HAVAL M6</h3>
+										<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
+										<p class="catalog-card__price">
+											Выгода до
+											<span class="catalog-card__price-value">410 000 ₽</span>
+										</p>
+										<img src="./images/photos/m6/white-non-metallic.png" alt="HAVAL M6 белый-неметаллик">
+									</div>
+								</li>
+							</ul>
+							<div class="catalog__navigation"></div>
+						</div>
+					</div>
+					<!-- \slider -->
+					<ul class="catalog__links">
+						<li>
+							<a href="#" class="catalog__link">
+								<span class="catalog__link-icon">
+									<svg width="21" height="21">
+										<use href="#benefit"></use>
+									</svg>
+								</span>
+								Выгода по госпрограмме
+							</a>
+						</li>
+						<li>
+							<a href="#" class="catalog__link">
+								<span class="catalog__link-icon">
+									<svg width="21" height="21">
+										<use href="#casco"></use>
+									</svg>
+								</span>
+								КАСКО в подарок
+							</a>
+						</li>
+						<li>
+							<a href="#" class="catalog__link">
+								<span class="catalog__link-icon">
+									<svg width="21" height="21">
+										<use href="#casco"></use>
+									</svg>
+								</span>
+								Доп.оборудование на&nbsp;100&nbsp;000р в&nbsp;подарок
+							</a>
+						</li>
+						<li>
+							<a href="#" class="catalog__link">
+								<span class="catalog__link-icon">
+									<svg width="21" height="21">
+										<use href="#trade-in"></use>
+									</svg>
+								</span>
+								Максимальные выгоды по трейд-ин
+							</a>
+						</li>
+						<li>
+							<a href="#" class="catalog__link">
+								<span class="catalog__link-icon">
+									<svg width="21" height="21">
+										<use href="#tires"></use>
+									</svg>
+								</span>
+								Зимние шины в подарок
+							</a>
+						</li>
+					</ul>
+					<ul class="catalog__buttons">
+						<li>
+							<a href="#" class="catalog__button button">Узнать стоимость</a>
+						</li>
+						<li>
+							<a href="#" class="catalog__button button button--inversion">Рассчитать кредит</a>
+						</li>
+						<li>
+							<a href="#" class="catalog__button button button--transparent">Подобрать комплектацию</a>
+						</li>
+					</ul>
+					<!-- /m6 -->
 
-		<!-- catalog -->
-		<section class="catalog">
-			<h2 class="visually-hidden">Каталог</h2>
-			<div class="catalog__container container">
-				<!-- m6 -->
-				<!-- slider -->
-				<div class="catalog__slider catalog__slider--m6">
-					<!-- info -->
-					<div class="catalog__info">
-						В наличии
-						<span class="catalog__info-count">21 автомобиль</span>
+					<!-- DARGO X -->
+					<!-- slider -->
+					<div class="catalog__slider catalog__slider--dargox">
+						<!-- info -->
+						<div class="catalog__info">
+							В наличии
+							<span class="catalog__info-count"></span>
+						</div>
+						<!-- \info -->
+						<div class="swiper">
+							<ul class="catalog__list swiper-wrapper">
+								<!-- Графитовый-кварц / graphite-quartz #adadad -->
+								<li class="catalog__item swiper-slide" data-color='{"text": "Графитовый-кварц", "code": "#adadad"}'
+									data-count="1" data-model="DARGO X">
+									<div class="catalog-card">
+										<h3 class="catalog-card__name">HAVAL DARGO X</h3>
+										<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
+										<p class="catalog-card__price">
+											Выгода до
+											<span class="catalog-card__price-value">320 000 ₽</span>
+										</p>
+										<img src="./images/photos/dargo_x/graphite-quartz.png" alt="HAVAL DARGO X Графитовый-кварц">
+									</div>
+								</li>
+								<!-- Черный-нефрит / black-jade #000000 -->
+								<li class="catalog__item swiper-slide" data-color='{"text": "Черный-нефрит", "code": "#000000"}'
+									data-count="1" data-model="DARGO X">
+									<div class="catalog-card">
+										<h3 class="catalog-card__name">HAVAL DARGO X</h3>
+										<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
+										<p class="catalog-card__price">
+											Выгода до
+											<span class="catalog-card__price-value">320 000 ₽</span>
+										</p>
+										<img src="./images/photos/dargo_x/black-jade.png" alt="HAVAL DARGO X Черный-нефрит">
+									</div>
+								</li>
+								<!-- Агат / agate #e7e7e7 -->
+								<li class="catalog__item swiper-slide" data-color='{"text": "Агат", "code": "#e7e7e7"}'
+								data-count="1"
+									data-model="DARGO X">
+									<div class="catalog-card">
+										<h3 class="catalog-card__name">HAVAL DARGO X</h3>
+										<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
+										<p class="catalog-card__price">
+											Выгода до
+											<span class="catalog-card__price-value">320 000 ₽</span>
+										</p>
+										<img src="./images/photos/dargo_x/agate.png" alt="HAVAL DARGO X Агат">
+									</div>
+								</li>
+								<!-- Терракотовый / terracotta #a13a21 -->
+								<li class="catalog__item swiper-slide" data-color='{"text": "Терракотовый", "code": "#a13a21"}'
+									data-count="1" data-model="DARGO X">
+									<div class="catalog-card">
+										<h3 class="catalog-card__name">HAVAL DARGO X</h3>
+										<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
+										<p class="catalog-card__price">
+											Выгода до
+											<span class="catalog-card__price-value">320 000 ₽</span>
+										</p>
+										<img src="./images/photos/dargo_x/terracotta.png" alt="HAVAL DARGO X Терракотовый">
+									</div>
+								</li>
+							</ul>
+							<div class="catalog__navigation"></div>
+						</div>
 					</div>
-					<!-- \info -->
-					<div class="swiper">
-						<ul class="catalog__list swiper-wrapper">
-							<!-- черный-неметаллик / black is non-metallic #000000 -->
-							<li class="catalog__item swiper-slide" data-color="{text: 'черный-неметаллик', code: '#000000'}" data-count="1" data-model="m6">
-								<div class="catalog-card">
-									<h3 class="catalog-card__name">HAVAL M6</h3>
-									<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
-									<p class="catalog-card__price">
-										Выгода до
-										<span class="catalog-card__price-value">410 000 ₽</span>
-									</p>
-									<img src="./images/photos/m6/black_is_non-metallic.png" alt="HAVAL M6 черный-неметаллик">
-								</div>
-							</li>
-							<!-- серый-неметаллик / gray is non-metallic #a1a1a1 -->
-							<li class="catalog__item swiper-slide" data-color="{text: 'серый-неметаллик', code: '#a1a1a1'}" data-count="1" data-model="m6">
-								<div class="catalog-card">
-									<h3 class="catalog-card__name">HAVAL M6</h3>
-									<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
-									<p class="catalog-card__price">
-										Выгода до
-										<span class="catalog-card__price-value">410 000 ₽</span>
-									</p>
-									<img src="./images/photos/m6/gray_is_non-metallic.png" alt="HAVAL M6 серый-неметаллик">
-								</div>
-							</li>
-							<!-- белый-неметаллик / white-non-metallic #e7e7e7 -->
-							<li class="catalog__item swiper-slide" data-color="{text: 'белый-неметаллик', code: '#e7e7e7'}" data-count="21" data-model="m6">
-								<div class="catalog-card">
-									<h3 class="catalog-card__name">HAVAL M6</h3>
-									<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
-									<p class="catalog-card__price">
-										Выгода до
-										<span class="catalog-card__price-value">410 000 ₽</span>
-									</p>
-									<img src="./images/photos/m6/white-non-metallic.png" alt="HAVAL M6 белый-неметаллик">
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="catalog__navigation"></div>
+					<!-- \slider -->
+					<ul class="catalog__links">
+						<li>
+							<a href="#" class="catalog__link">
+								<span class="catalog__link-icon">
+									<svg width="21" height="21">
+										<use href="#benefit"></use>
+									</svg>
+								</span>
+								Выгода по госпрограмме
+							</a>
+						</li>
+						<li>
+							<a href="#" class="catalog__link">
+								<span class="catalog__link-icon">
+									<svg width="21" height="21">
+										<use href="#casco"></use>
+									</svg>
+								</span>
+								КАСКО в подарок
+							</a>
+						</li>
+						<li>
+							<a href="#" class="catalog__link">
+								<span class="catalog__link-icon">
+									<svg width="21" height="21">
+										<use href="#casco"></use>
+									</svg>
+								</span>
+								Доп.оборудование на&nbsp;100&nbsp;000р в&nbsp;подарок
+							</a>
+						</li>
+						<li>
+							<a href="#" class="catalog__link">
+								<span class="catalog__link-icon">
+									<svg width="21" height="21">
+										<use href="#trade-in"></use>
+									</svg>
+								</span>
+								Максимальные выгоды по трейд-ин
+							</a>
+						</li>
+						<li>
+							<a href="#" class="catalog__link">
+								<span class="catalog__link-icon">
+									<svg width="21" height="21">
+										<use href="#tires"></use>
+									</svg>
+								</span>
+								Зимние шины в подарок
+							</a>
+						</li>
+					</ul>
+					<ul class="catalog__buttons">
+						<li>
+							<a href="#" class="catalog__button button">Узнать стоимость</a>
+						</li>
+						<li>
+							<a href="#" class="catalog__button button button--inversion">Рассчитать кредит</a>
+						</li>
+						<li>
+							<a href="#" class="catalog__button button button--transparent">Подобрать комплектацию</a>
+						</li>
+					</ul>
+					<!-- /DARGO X -->
 				</div>
-				<!-- \slider -->
-				<ul class="catalog__links">
-					<li>
-						<a href="#" class="catalog__link">
-							<span class="catalog__link-icon">
-								<svg width="21" height="21">
-									<use href="#benefit"></use>
-								</svg>
-							</span>
-							Выгода по госпрограмме
-						</a>
-					</li>
-					<li>
-						<a href="#" class="catalog__link">
-							<span class="catalog__link-icon">
-								<svg width="21" height="21">
-									<use href="#casco"></use>
-								</svg>
-							</span>
-							КАСКО в подарок
-						</a>
-					</li>
-					<li>
-						<a href="#" class="catalog__link">
-							<span class="catalog__link-icon">
-								<svg width="21" height="21">
-									<use href="#casco"></use>
-								</svg>
-							</span>
-							Доп.оборудование на&nbsp;100&nbsp;000р в&nbsp;подарок
-						</a>
-					</li>
-					<li>
-						<a href="#" class="catalog__link">
-							<span class="catalog__link-icon">
-								<svg width="21" height="21">
-									<use href="#trade-in"></use>
-								</svg>
-							</span>
-							Максимальные выгоды по трейд-ин
-						</a>
-					</li>
-					<li>
-						<a href="#" class="catalog__link">
-							<span class="catalog__link-icon">
-								<svg width="21" height="21">
-									<use href="#tires"></use>
-								</svg>
-							</span>
-							Зимние шины в подарок
-						</a>
-					</li>
-				</ul>
-				<ul class="catalog__buttons">
-					<li>
-						<a href="#" class="catalog__button button">Узнать стоимость</a>
-					</li>
-					<li>
-						<a href="#" class="catalog__button button button--inversion">Рассчитать кредит</a>
-					</li>
-					<li>
-						<a href="#" class="catalog__button button button--transparent">Подобрать комплектацию</a>
-					</li>
-				</ul>
-				<!-- /m6 -->
+			</section>
+			<!-- \catalog -->
+		</main>
+		<!-- /main -->
+		<script src="./vendor/swiper/swiper-bundle.min.js"></script>
+		<script src="./scripts/main.js"></script>
+	</body>
 
-				<!-- DARGO X -->
-				<!-- slider -->
-				<div class="catalog__slider catalog__slider--dargox">
-					<!-- info -->
-					<div class="catalog__info">
-						В наличии
-						<span class="catalog__info-count">21 автомобиль</span>
-					</div>
-					<!-- \info -->
-					<div class="swiper">
-						<ul class="catalog__list swiper-wrapper">
-							<!-- Графитовый-кварц / graphite-quartz #adadad -->
-							<li class="catalog__item swiper-slide" data-color="{text: 'Графитовый-кварц', code: '#adadad'}" data-count="1"
-								data-model="DARGO X">
-								<div class="catalog-card">
-									<h3 class="catalog-card__name">HAVAL DARGO X</h3>
-									<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
-									<p class="catalog-card__price">
-										Выгода до
-										<span class="catalog-card__price-value">320 000 ₽</span>
-									</p>
-									<img src="./images/photos/dargo_x/graphite-quartz.png" alt="HAVAL DARGO X Графитовый-кварц">
-								</div>
-							</li>
-							<!-- Черный-нефрит / black-jade #000000 -->
-							<li class="catalog__item swiper-slide" data-color="{text: 'Черный-нефрит', code: '#000000'}" data-count="1"
-								data-model="DARGO X">
-								<div class="catalog-card">
-									<h3 class="catalog-card__name">HAVAL DARGO X</h3>
-									<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
-									<p class="catalog-card__price">
-										Выгода до
-										<span class="catalog-card__price-value">320 000 ₽</span>
-									</p>
-									<img src="./images/photos/dargo_x/black-jade.png" alt="HAVAL DARGO X Черный-нефрит">
-								</div>
-							</li>
-							<!-- Агат / agate #e7e7e7 -->
-							<li class="catalog__item swiper-slide" data-color="{text: 'Агат', code: '#e7e7e7'}" data-count="1"
-								data-model="DARGO X">
-								<div class="catalog-card">
-									<h3 class="catalog-card__name">HAVAL DARGO X</h3>
-									<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
-									<p class="catalog-card__price">
-										Выгода до
-										<span class="catalog-card__price-value">320 000 ₽</span>
-									</p>
-									<img src="./images/photos/dargo_x/agate.png" alt="HAVAL DARGO X Агат">
-								</div>
-							</li>
-							<!-- Терракотовый / terracotta #a13a21 -->
-							<li class="catalog__item swiper-slide" data-color="{text: 'Терракотовый', code: '#a13a21'}" data-count="1"
-								data-model="DARGO X">
-								<div class="catalog-card">
-									<h3 class="catalog-card__name">HAVAL DARGO X</h3>
-									<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
-									<p class="catalog-card__price">
-										Выгода до
-										<span class="catalog-card__price-value">320 000 ₽</span>
-									</p>
-									<img src="./images/photos/dargo_x/terracotta.png" alt="HAVAL DARGO X Терракотовый">
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="catalog__navigation"></div>
-				</div>
-				<!-- \slider -->
-				<ul class="catalog__links">
-					<li>
-						<a href="#" class="catalog__link">
-							<span class="catalog__link-icon">
-								<svg width="21" height="21">
-									<use href="#benefit"></use>
-								</svg>
-							</span>
-							Выгода по госпрограмме
-						</a>
-					</li>
-					<li>
-						<a href="#" class="catalog__link">
-							<span class="catalog__link-icon">
-								<svg width="21" height="21">
-									<use href="#casco"></use>
-								</svg>
-							</span>
-							КАСКО в подарок
-						</a>
-					</li>
-					<li>
-						<a href="#" class="catalog__link">
-							<span class="catalog__link-icon">
-								<svg width="21" height="21">
-									<use href="#casco"></use>
-								</svg>
-							</span>
-							Доп.оборудование на&nbsp;100&nbsp;000р в&nbsp;подарок
-						</a>
-					</li>
-					<li>
-						<a href="#" class="catalog__link">
-							<span class="catalog__link-icon">
-								<svg width="21" height="21">
-									<use href="#trade-in"></use>
-								</svg>
-							</span>
-							Максимальные выгоды по трейд-ин
-						</a>
-					</li>
-					<li>
-						<a href="#" class="catalog__link">
-							<span class="catalog__link-icon">
-								<svg width="21" height="21">
-									<use href="#tires"></use>
-								</svg>
-							</span>
-							Зимние шины в подарок
-						</a>
-					</li>
-				</ul>
-				<ul class="catalog__buttons">
-					<li>
-						<a href="#" class="catalog__button button">Узнать стоимость</a>
-					</li>
-					<li>
-						<a href="#" class="catalog__button button button--inversion">Рассчитать кредит</a>
-					</li>
-					<li>
-						<a href="#" class="catalog__button button button--transparent">Подобрать комплектацию</a>
-					</li>
-				</ul>
-				<!-- /DARGO X -->
-			</div>
-		</section>
-		<!-- \catalog -->
-	</main>
-	<!-- /main -->
-	<script src="./vendor/swiper/swiper-bundle.min.js"></script>
-	<script src="./scripts/main.js"></script>
-</body>
-
-</html>
+	</html>
