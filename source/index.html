@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<title>Document</title>
+	<link rel="stylesheet" href="./vendor/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./styles/main.css">
 </head>
 
@@ -214,12 +215,6 @@
   }
 }' data-lazy="true"></div>
 					<script src="//timer.sinoby.ru/public/assets/embed/timer-core.min.js?v=20260514a"></script>
-					<script>
-						window.addEventListener('load', () => {
-							console.log(SinobyTimer);
-						})
-
-					</script>
 					<!-- /Sinoby Timer -->
 				</div>
 				<!-- \timer__block -->
@@ -242,44 +237,46 @@
 						<span class="catalog__info-count">21 автомобиль</span>
 					</div>
 					<!-- \info -->
-					<ul class="catalog__list">
-						<!-- черный-неметаллик / black is non-metallic #000000 -->
-						<li class="catalog__item" data-color="{text: 'черный-неметаллик', code: '#000000'}" data-count="1" data-model="m6">
-							<div class="catalog-card">
-								<h3 class="catalog-card__name">HAVAL M6</h3>
-								<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
-								<p class="catalog-card__price">
-									Выгода до
-									<span class="catalog-card__price-value">410 000 ₽</span>
-								</p>
-								<img src="./images/photos/m6/black_is_non-metallic.png" alt="HAVAL M6 черный-неметаллик">
-							</div>
-						</li>
-						<!-- серый-неметаллик / gray is non-metallic #a1a1a1 -->
-						<li class="catalog__item" data-color="{text: 'серый-неметаллик', code: '#a1a1a1'}" data-count="1" data-model="m6">
-							<div class="catalog-card">
-								<h3 class="catalog-card__name">HAVAL M6</h3>
-								<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
-								<p class="catalog-card__price">
-									Выгода до
-									<span class="catalog-card__price-value">410 000 ₽</span>
-								</p>
-								<img src="./images/photos/m6/gray_is_non-metallic.png" alt="HAVAL M6 серый-неметаллик">
-							</div>
-						</li>
-						<!-- белый-неметаллик / white-non-metallic #e7e7e7 -->
-						<li class="catalog__item" data-color="{text: 'белый-неметаллик', code: '#e7e7e7'}" data-count="21" data-model="m6">
-							<div class="catalog-card">
-								<h3 class="catalog-card__name">HAVAL M6</h3>
-								<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
-								<p class="catalog-card__price">
-									Выгода до
-									<span class="catalog-card__price-value">410 000 ₽</span>
-								</p>
-								<img src="./images/photos/m6/white-non-metallic.png" alt="HAVAL M6 белый-неметаллик">
-							</div>
-						</li>
-					</ul>
+					<div class="swiper">
+						<ul class="catalog__list swiper-wrapper">
+							<!-- черный-неметаллик / black is non-metallic #000000 -->
+							<li class="catalog__item swiper-slide" data-color="{text: 'черный-неметаллик', code: '#000000'}" data-count="1" data-model="m6">
+								<div class="catalog-card">
+									<h3 class="catalog-card__name">HAVAL M6</h3>
+									<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
+									<p class="catalog-card__price">
+										Выгода до
+										<span class="catalog-card__price-value">410 000 ₽</span>
+									</p>
+									<img src="./images/photos/m6/black_is_non-metallic.png" alt="HAVAL M6 черный-неметаллик">
+								</div>
+							</li>
+							<!-- серый-неметаллик / gray is non-metallic #a1a1a1 -->
+							<li class="catalog__item swiper-slide" data-color="{text: 'серый-неметаллик', code: '#a1a1a1'}" data-count="1" data-model="m6">
+								<div class="catalog-card">
+									<h3 class="catalog-card__name">HAVAL M6</h3>
+									<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
+									<p class="catalog-card__price">
+										Выгода до
+										<span class="catalog-card__price-value">410 000 ₽</span>
+									</p>
+									<img src="./images/photos/m6/gray_is_non-metallic.png" alt="HAVAL M6 серый-неметаллик">
+								</div>
+							</li>
+							<!-- белый-неметаллик / white-non-metallic #e7e7e7 -->
+							<li class="catalog__item swiper-slide" data-color="{text: 'белый-неметаллик', code: '#e7e7e7'}" data-count="21" data-model="m6">
+								<div class="catalog-card">
+									<h3 class="catalog-card__name">HAVAL M6</h3>
+									<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
+									<p class="catalog-card__price">
+										Выгода до
+										<span class="catalog-card__price-value">410 000 ₽</span>
+									</p>
+									<img src="./images/photos/m6/white-non-metallic.png" alt="HAVAL M6 белый-неметаллик">
+								</div>
+							</li>
+						</ul>
+					</div>
 					<div class="catalog__navigation"></div>
 				</div>
 				<!-- \slider -->
@@ -357,60 +354,62 @@
 						<span class="catalog__info-count">21 автомобиль</span>
 					</div>
 					<!-- \info -->
-					<ul class="catalog__list">
-						<!-- Графитовый-кварц / graphite-quartz #adadad -->
-						<li class="catalog__item" data-color="{text: 'Графитовый-кварц', code: '#adadad'}" data-count="1"
-							data-model="DARGO X">
-							<div class="catalog-card">
-								<h3 class="catalog-card__name">HAVAL DARGO X</h3>
-								<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
-								<p class="catalog-card__price">
-									Выгода до
-									<span class="catalog-card__price-value">320 000 ₽</span>
-								</p>
-								<img src="./images/photos/dargo_x/graphite-quartz.png" alt="HAVAL DARGO X Графитовый-кварц">
-							</div>
-						</li>
-						<!-- Черный-нефрит / black-jade #000000 -->
-						<li class="catalog__item" data-color="{text: 'Черный-нефрит', code: '#000000'}" data-count="1"
-							data-model="DARGO X">
-							<div class="catalog-card">
-								<h3 class="catalog-card__name">HAVAL DARGO X</h3>
-								<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
-								<p class="catalog-card__price">
-									Выгода до
-									<span class="catalog-card__price-value">320 000 ₽</span>
-								</p>
-								<img src="./images/photos/dargo_x/black-jade.png" alt="HAVAL DARGO X Черный-нефрит">
-							</div>
-						</li>
-						<!-- Агат / agate #e7e7e7 -->
-						<li class="catalog__item" data-color="{text: 'Агат', code: '#e7e7e7'}" data-count="1"
-							data-model="DARGO X">
-							<div class="catalog-card">
-								<h3 class="catalog-card__name">HAVAL DARGO X</h3>
-								<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
-								<p class="catalog-card__price">
-									Выгода до
-									<span class="catalog-card__price-value">320 000 ₽</span>
-								</p>
-								<img src="./images/photos/dargo_x/agate.png" alt="HAVAL DARGO X Агат">
-							</div>
-						</li>
-						<!-- Терракотовый / terracotta #a13a21 -->
-						<li class="catalog__item" data-color="{text: 'Терракотовый', code: '#a13a21'}" data-count="1"
-							data-model="DARGO X">
-							<div class="catalog-card">
-								<h3 class="catalog-card__name">HAVAL DARGO X</h3>
-								<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
-								<p class="catalog-card__price">
-									Выгода до
-									<span class="catalog-card__price-value">320 000 ₽</span>
-								</p>
-								<img src="./images/photos/dargo_x/terracotta.png" alt="HAVAL DARGO X Терракотовый">
-							</div>
-						</li>
-					</ul>
+					<div class="swiper">
+						<ul class="catalog__list swiper-wrapper">
+							<!-- Графитовый-кварц / graphite-quartz #adadad -->
+							<li class="catalog__item swiper-slide" data-color="{text: 'Графитовый-кварц', code: '#adadad'}" data-count="1"
+								data-model="DARGO X">
+								<div class="catalog-card">
+									<h3 class="catalog-card__name">HAVAL DARGO X</h3>
+									<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
+									<p class="catalog-card__price">
+										Выгода до
+										<span class="catalog-card__price-value">320 000 ₽</span>
+									</p>
+									<img src="./images/photos/dargo_x/graphite-quartz.png" alt="HAVAL DARGO X Графитовый-кварц">
+								</div>
+							</li>
+							<!-- Черный-нефрит / black-jade #000000 -->
+							<li class="catalog__item swiper-slide" data-color="{text: 'Черный-нефрит', code: '#000000'}" data-count="1"
+								data-model="DARGO X">
+								<div class="catalog-card">
+									<h3 class="catalog-card__name">HAVAL DARGO X</h3>
+									<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
+									<p class="catalog-card__price">
+										Выгода до
+										<span class="catalog-card__price-value">320 000 ₽</span>
+									</p>
+									<img src="./images/photos/dargo_x/black-jade.png" alt="HAVAL DARGO X Черный-нефрит">
+								</div>
+							</li>
+							<!-- Агат / agate #e7e7e7 -->
+							<li class="catalog__item swiper-slide" data-color="{text: 'Агат', code: '#e7e7e7'}" data-count="1"
+								data-model="DARGO X">
+								<div class="catalog-card">
+									<h3 class="catalog-card__name">HAVAL DARGO X</h3>
+									<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
+									<p class="catalog-card__price">
+										Выгода до
+										<span class="catalog-card__price-value">320 000 ₽</span>
+									</p>
+									<img src="./images/photos/dargo_x/agate.png" alt="HAVAL DARGO X Агат">
+								</div>
+							</li>
+							<!-- Терракотовый / terracotta #a13a21 -->
+							<li class="catalog__item swiper-slide" data-color="{text: 'Терракотовый', code: '#a13a21'}" data-count="1"
+								data-model="DARGO X">
+								<div class="catalog-card">
+									<h3 class="catalog-card__name">HAVAL DARGO X</h3>
+									<a href="#" class="catalog-card__pensil">Записаться на тест-драйв</a>
+									<p class="catalog-card__price">
+										Выгода до
+										<span class="catalog-card__price-value">320 000 ₽</span>
+									</p>
+									<img src="./images/photos/dargo_x/terracotta.png" alt="HAVAL DARGO X Терракотовый">
+								</div>
+							</li>
+						</ul>
+					</div>
 					<div class="catalog__navigation"></div>
 				</div>
 				<!-- \slider -->
@@ -483,6 +482,7 @@
 		<!-- \catalog -->
 	</main>
 	<!-- /main -->
+	<script src="./vendor/swiper/swiper-bundle.min.js"></script>
 	<script src="./scripts/main.js"></script>
 </body>
 
