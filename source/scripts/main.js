@@ -1,6 +1,8 @@
 const catalogSwiperOptopns = {
-	speed: 400,
-	spaceBetween: 100,
+	speed: 200,
+	effect: 'fade',
+	loop: true,
+	autoHeight: false,
 	pagination: {
 		el: '.catalog__navigation',
 		clickable: true,
@@ -33,8 +35,9 @@ function updateBulletsColor(swiper) {
 			try {
 				const colorObj = JSON.parse(dataColor.replace(/'/g, '"'));
 				bullet.style.color = colorObj.code;
+				// bullet.style.setProperty('--color', colorObj.code)
 			} catch (e) {
-				console.warn('Не удалсь получить цвет ' + e);
+				console.warn('Не удалось получить цвет ' + e);
 			}
 		}
 
@@ -53,7 +56,7 @@ function updateCount(swiper) {
 		const n = parseInt(count, 10);
 
 		if (isNaN(n)) {
-			infoCountElement.classList.toggle('catalog__info-count--hidden', true);
+			infoElement.classList.toggle('catalog__info-count--hidden', true);
 			return;
 		}
 
@@ -63,6 +66,7 @@ function updateCount(swiper) {
 		}
 
 		if (n === 1) {
+			infoElement.classList.toggle('catalog__info-count--hidden', false);
 			infoCountElement.classList.toggle('catalog__info-count--hidden', true);
 			return;
 		}
