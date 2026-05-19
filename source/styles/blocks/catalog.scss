@@ -10,8 +10,6 @@
 	margin-top: 23px;
 	padding: 40px;
 	background-color: #f3f3f3;
-	display: grid;
-	grid-template-rows: auto 1fr auto auto;
 
 	@media (max-width: 700px) {
 		padding: 40px 20px 20px;
