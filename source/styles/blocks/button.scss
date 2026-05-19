@@ -1,6 +1,6 @@
 .button {
 	display: inline-block;
-	padding: 20px 22px;
+	padding: 20px 21px 18px;
 	font-weight: 500;
 	line-height: 1.2;
 	text-align: center;
@@ -11,6 +11,8 @@
 	border: 0;
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	appearance: none;
+	border: 1px solid #00cabf;
+
 
 	&:not(:disabled):hover {
 		background-color: #01a39b;
@@ -18,5 +20,24 @@
 
 	&:not(:disabled):active {
 		color: rgba(255, 255, 255, 0.7);
+	}
+
+	&--inversion {
+		background-color: #000000;
+		border-color: #000000;
+
+		&:not(:disabled):hover {
+			background-color: #292929;
+		}
+	}
+
+	&--transparent {
+		background-color: transparent;
+		border-color: #000000;
+		color: #000000;
+
+		&:not(:disabled):hover {
+			background-color: rgba(0, 0, 0, 0.1);
+		}
 	}
 }
