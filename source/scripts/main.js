@@ -96,4 +96,10 @@ function updateCount(swiper) {
 document.addEventListener('DOMContentLoaded', () => {
 	const swiperM6 = new Swiper('.catalog__slider--m6 .swiper', catalogSwiperOptopns);
 	const swiperDargox = new Swiper('.catalog__slider--dargox .swiper', catalogSwiperOptopns);
+
+	$('[data-fancybox]').fancybox({
+		autoFocus: true,
+		closeBtn: true,
+		padding: 20
+	});
 });
