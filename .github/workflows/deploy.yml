@@ -14,7 +14,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 20.x
+          node-version: 18.x
 
       - name: Checkout
         uses: actions/checkout@v3
@@ -22,7 +22,7 @@ jobs:
           persist-credentials: false
 
       - name: Install dependencies
-        run: npm i
+        run: npm ci
 
       - name: Build project
         run: npm run build
